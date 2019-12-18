@@ -119,13 +119,6 @@ Esto permite el que entienda los mensajes auNqUe EsTen EscritoS aSi(mayusculas p
 let message = msg.content.toLowerCase()
 
 
-
-Esto borra los mensajes que contengan aquellas palabras, dejelo asi o editelo a gusto :3
-client.on('message', msg => {
-  if(msg.content.includes('shit') || msg.content.includes('rompebolas')|| msg.content.includes('fuck')|| msg.content.includes('polla')|| msg.content.includes('sexo')|| msg.content.includes('niga')|| msg.content.includes('nigga')|| msg.content.includes('boludo')|| msg.content.includes('te odio')){
-    msg.delete()
-  }
-
  LO QUE ESTA ESCRITO EN ESTE COLOR ES SOLO TEXTO, NO AFECTA AL CODIGO, SE HACE CON // O CON / Y *
 */
 
