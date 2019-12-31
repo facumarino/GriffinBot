@@ -95,7 +95,15 @@ client.on('message', msg => {
 
 
 
-
+client.on('message', msg => {
+  if (msg.author == client.user){return}
+  if (msg.author.id == "159985870458322944"){return}
+  let message = msg.content.toLowerCase()
+  if(message.includes("como estas")) {
+    msg.channel.startTyping();
+    setTimeout(function(){msg.reply('Bien y tu? :D') ; }, Math.floor(Math.random() * 1000+550));
+    msg.channel.stopTyping(true);
+  }});
 
 
 
@@ -117,6 +125,9 @@ Esto hace que NO conteste al bot Mee6, no es nesesario si no lo tienen en su ser
 
 Esto permite el que entienda los mensajes auNqUe EsTen EscritoS aSi(mayusculas por si no quedo claro xd):
 let message = msg.content.toLowerCase()
+
+Esto permite que aparezca el bot como escribiendo, cambien los numeros para cambiar el tiempo de espera:
+    setTimeout(function(){msg.reply('Hola bombon :3') ; }, Math.floor(Math.random() * 1000+550));
 
 
  LO QUE ESTA ESCRITO EN ESTE COLOR ES SOLO TEXTO, NO AFECTA AL CODIGO, SE HACE CON // O CON / Y *
